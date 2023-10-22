@@ -77,7 +77,7 @@ export default {
                 }
                 , {
                     name: '照明商店',
-                    like_num: 315153
+                    like_num: 35153
                 }, {
                     name: '熊出没.逆转时空',
                     like_num: 26677
