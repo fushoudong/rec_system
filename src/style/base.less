@@ -2,8 +2,8 @@
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
   color: #2c3e50;
+  height: 100vh;
 }
 
 * {
@@ -12,16 +12,14 @@
   box-sizing: border-box;
 }
 
-ul li {
+ul, li {
   list-style: none;
 }
-
-html body {
+html, body {
   height: 100%;
 }
-
 body {
-  background: white;
+  background: #fff;
 }
 
 ::-webkit-scrollbar {
@@ -57,108 +55,113 @@ body {
 }
 
 .header .logo {
-  background-color: #333;
+  background: #333;
   color: #fff;
 }
 
-.main {
+.main{
   width: 90%;
   min-width: 1200px;
   margin: 0 auto;
 }
 
-.page-main {
+.page-main{
   width: 1200px;
   margin: 0 auto;
   padding-top: 25px;
 }
 
-#app {
+#app{
   display: flex;
   flex-direction: column;
-
-  .el-header.header-container {
+  .el-header.header-container{
     height: 60px;
     flex-shrink: 0;
   }
 
-  .page-outer {
+  .page-outer{
     width: 100%;
-    height: 100%;
-    overflow-y: auto;
-    padding: 15px;
-  }
+    flex: 1;
 
-  .page-base-inner {
-    width: 100%;
-    height: 100%;
-    overflow-y: auto;
-    padding: 15px;
-  }
+    .page-inner{
+      width: 100%;
+      height: 100%;
+      overflow-y: auto;
+      padding: 15px;
+    }
+	  .page-base-inner{
+		  width: 100%;
+		  height: 100%;
+		  overflow-y: auto;
 
-  .el-main-base-inner {
-    background-color: white;
-    height: inherit;
+		  padding: 15px;
+	  }
+	  .el-main-base-inner{
+		  background-color:white;
+		  height: inherit;
+	  }
   }
 }
 
-.box-card {
-  .el-card__body {
+.box-card{
+  .el-card__body{
     padding: 0;
   }
 }
 
-.model-type {
-  .el-card__body {
+.model-type{
+  .el-card__body{
     padding: 14px;
   }
-
 }
 
-.el-input-group__prepend {
-  padding: 0 px !important;
+.el-input-group__prepend{
+  padding: 0 10px!important;
 }
-
-.table {
+.table{
   margin-top: 20px;
   margin-bottom: 20px;
 }
-
-.el-footer {
+.el-footer{
   font-size: 10px;
-  padding-left: 10%;
+  padding-left:10%;
 }
-
-.el-container {
-  .el-row {
-    padding: 10px 0px;
+.el-container{
+  .el-row{
+    padding :10px 0px;
     width: 100%;
     display: flex;
     align-items: center;
   }
-
-  .el-main {
-    padding-top: 0px;
+  .el-main{
+    padding-top:0px
   }
 }
-
-// 用于页面左对齐的文字显示
-.rightLable {
+//  用于页面左对齐的文字显示
+.rightLable{
   text-align: right;
 }
-
-.el-row {
+.el-row{
   overflow: auto;
+  // padding: 5px 0px 5px 0px;
 }
-
-.el-button--mini {
+.el-button--mini{
   padding: 5px 9px;
 }
-
-.el-card {
+.el-card{
   margin: 10px 0px;
 }
-
 .el-table {
   margin: 5px 0px;
+}
+body .el-table th.gutter{display: table-cell!important;}
+
+// .el-table__body tr.current-row>td{
+//   background-color: #84c1ff;
+// }
+// .el-table--enable-row-hover .el-table__body tr:hover>td{
+//   background-color: #84c1ff;
+// }
+.page-outer{
+  display: -webkit-box !important;
 }

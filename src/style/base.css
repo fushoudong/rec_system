@@ -2,22 +2,24 @@
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
   color: #2c3e50;
+  height: 100vh;
 }
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-ul li {
+ul,
+li {
   list-style: none;
 }
-html body {
+html,
+body {
   height: 100%;
 }
 body {
-  background: white;
+  background: #fff;
 }
 ::-webkit-scrollbar {
   width: 5px;
@@ -46,7 +48,7 @@ body {
   padding: 0 20px;
 }
 .header .logo {
-  background-color: #333;
+  background: #333;
   color: #fff;
 }
 .main {
@@ -69,17 +71,21 @@ body {
 }
 #app .page-outer {
   width: 100%;
-  height: 100%;
-  overflow-y: auto;
-  padding: 15px;
+  flex: 1;
 }
-#app .page-base-inner {
+#app .page-outer .page-inner {
   width: 100%;
   height: 100%;
   overflow-y: auto;
   padding: 15px;
 }
-#app .el-main-base-inner {
+#app .page-outer .page-base-inner {
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+  padding: 15px;
+}
+#app .page-outer .el-main-base-inner {
   background-color: white;
   height: inherit;
 }
@@ -90,7 +96,7 @@ body {
   padding: 14px;
 }
 .el-input-group__prepend {
-  padding: 0 px !important;
+  padding: 0 10px!important;
 }
 .table {
   margin-top: 20px;
@@ -123,4 +129,10 @@ body {
 }
 .el-table {
   margin: 5px 0px;
+}
+body .el-table th.gutter {
+  display: table-cell !important;
+}
+.page-outer {
+  display: -webkit-box !important;
 }
