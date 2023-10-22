@@ -4,13 +4,10 @@
             :default-active="activedPath" class="side-bar-menu" :collapse="isCollapse">
             <!-- 一级导航 -->
             <template v-for="(menu, index) in menuList">
-                <el-submenu :index="fullPath + '/' + menu.path">
-                    <template slot="title">
-                        <i :class="menu.meta.icon"></i>
-                        <span>{{ menu.meta.name }}</span>
-                    </template>
-
-                </el-submenu>
+                <el-menu-item :index="fullPath + '/' + index">
+                    <i :class="menu.meta.icon"></i>
+                    <span>{{ menu.meta.name }}</span>
+                  </el-menu-item>
             </template>
         </el-menu>
         <div></div>

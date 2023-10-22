@@ -3,10 +3,10 @@ import Router from 'vue-router'
 import Login from '@/views/login/index'
 import Register from '@/views/register/index'
 import ForgetPassword from '@/views/password/index'
-import HotRecommond from './hot_rec'
-import RateHistory from './history'
-import GuessLike from './like'
-import SelfInfo from './info'
+import HotRecommondRouter from './hot_rec'
+import RateHistoryRouter from './history'
+import GuessLikeRouter from './like'
+import SelfInfoRouter from './info'
 Vue.use(Router)
 
 export default new Router({
@@ -51,9 +51,9 @@ export default new Router({
         hidden: true
       }
     },
-    HotRecommond,
-    RateHistory,
-    GuessLike,
-    SelfInfo
+    HotRecommondRouter,
+    RateHistoryRouter,
+    GuessLikeRouter,
+    SelfInfoRouter
   ]
 })

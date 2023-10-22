@@ -6,7 +6,7 @@
           <h3 class="mainTitle" style="white-space: nowrap;">推荐系统</h3>
         </el-col>
         <el-col :span="20">
-         &nbsp;
+          &nbsp;
         </el-col>
         <el-col class="avator" :span="1">
           <el-dropdown @command="handleCommand">
@@ -21,9 +21,9 @@
         </el-col>
       </el-row>
     </el-header>
-   <div style="height: calc(100vh - 78px);">
-    <router-view />
-   </div>
+    <div style="height: calc(100vh - 78px);">
+      <router-view />
+    </div>
   </div>
 </template>
 

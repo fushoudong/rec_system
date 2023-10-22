@@ -9,7 +9,7 @@
 <script>
 import SideBar from '../../components/SideBar'
 export default {
-    name: 'RateHistory',
+    name: 'RateHistoryRouter',
     components: {
         SideBar
     },

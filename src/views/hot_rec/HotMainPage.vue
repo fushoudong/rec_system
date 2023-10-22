@@ -1,57 +1,45 @@
 <template>
     <div class="hot-page-main">
-        热门推荐页面
-        <div>
-            
-        </div>
+        <el-row class="hot-row">
+            <el-col :span="18"><rate-board /></el-col>
+            <el-col :span="6">
+                <top-hot-rec />
+            </el-col>
+        </el-row>
     </div>
 </template>
 <script>
+import RateBoard from '@/views/hot_rec/RateBoard'
+import TopHotRec from '@/views/hot_rec/TopHotRec'
+
 export default {
     name: 'HotMainPage',
+    components: {
+        RateBoard,
+        TopHotRec
+    },
     data() {
         return {
-            menuList: [],
-            fullPath: ''
+
         }
     },
     methods: {
-        getSiderBarList() {
-            const routes = this.$router.options.routes
-            console.log("routes", routes)
-            let children = []
-            let path = ''
-
-            routes.forEach((item) => {
-                if (item.meta != undefined && !item.meta.hidden) {
-                    children.push(item)
-                }
-                if (item.name === this.pathName) {
-                    path = item.path
-                }
-            })
-            this.fullPath = path
-            this.menuList = children
-
-        },
-        handleOpen(key, keyPath) {
-            console.log(key, keyPath);
-        },
-        handleClose(key, keyPath) {
-            console.log(key, keyPath);
-        }
 
     },
     created() {
         console.log('OnCreated')
     },
     mounted() {
-        this.getSiderBarList()
     }
 }
 </script>
 <style scoped>
 .hot-page-main {
     padding: 10px;
+    width: 100%;
+}
+.hot-row {
+   width: calc(100vw) - 210px;
+   height: 100%;
 }
 </style>

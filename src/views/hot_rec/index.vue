@@ -1,6 +1,6 @@
 <template>
     <div class="rec-main">
-        <side-bar path-name="HotRecommond"/>
+        <side-bar path-name="HotRecommondRouter"/>
         <hot-main-page/>
     </div>
 </template>
@@ -8,7 +8,7 @@
 import SideBar from '@/components/SideBar'
 import HotMainPage from '@/views/hot_rec/HotMainPage'
 export default {
-    name: 'HotRecommond',
+    name: 'HotRecommondRouter',
     components: {
         SideBar,
         HotMainPage

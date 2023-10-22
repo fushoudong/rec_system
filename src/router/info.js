@@ -1,11 +1,22 @@
-import SelfInfo from '@/views/info/index'
+import SelfInfoRouter from '@/views/info/index'
+import InfoMainPage from '@/views/info/InfoMainPage'
+
 export default {
   path: '/info',
-  name: 'SelfInfo',
-  component: SelfInfo,
+  name: 'SelfInfoRouter',
+  component: SelfInfoRouter,
   meta: {
     name: '个人信息',
     icon: 'el-icon-info'
   },
-  children: []
+  children: [{
+    path: 'index',
+    name: 'InfoMainPage',
+    component: InfoMainPage,
+    meta: {
+      name: '个人信息',
+      parent: 'SelfInfoRouter',
+      
+    }
+  }]
 }

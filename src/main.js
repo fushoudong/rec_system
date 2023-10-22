@@ -14,9 +14,13 @@ import moment from 'moment'
 import {
   SessionStorage
 } from 'wii-fe-utils' // 跨页面用的sess，主要用于鉴权
+import VuePapaParse from 'vue-papa-parse'
+
 Vue.use(ElementUI)
 // Vue.use(Echarts)
 Vue.use(moment)
+Vue.use(VuePapaParse)
+
 
 /* eslint-disable no-new */
 new Vue({
