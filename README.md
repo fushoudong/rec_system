@@ -1,21 +1,42 @@
-# rec_system
-
-> A Vue.js project
-
-## Build Setup
+## 构建及运行
 
 ``` bash
-# install dependencies
+# 安装
 npm install
 
-# serve with hot reload at localhost:8080
+# 启动服务 localhost:8080
 npm run dev
 
-# build for production with minification
+# 打包
 npm run build
-
-# build for production and view the bundle analyzer report
-npm run build --report
 ```
 
-For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+## 目录结构
+
+#### src/components
+放置所有的公用组件
+
+#### src/const
+放置一些常量
+
+#### src/libs
+公共函数
+
+#### src/router
+路由文件，目前是主路由和子页面的分路由
+
+#### src/styles
+样式文件
+
+#### src/views
+页面文件，按功能模块分
+
+### 提交日期及修改内容
+#### 2023-10-22
+- 页面菜单
+- 新建登录界面
+- 新建注册页面
+- 新增热门推荐
+- 猜你喜欢
+- 评分历史
+- 个人信息
