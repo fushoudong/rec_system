@@ -1,14 +1,17 @@
 <template>
-    <div>
+    <div class="like-main">
         <side-bar></side-bar>
+        <like-main-page/>
     </div>
 </template>
 <script>
 import SideBar from '../../components/SideBar'
+import LikeMainPage from "./LikeMainPage.vue"
 export default {
     name: 'RateHistoryRouter',
     components: {
-        SideBar
+        SideBar,
+        LikeMainPage
     },
     data() {
         return {
@@ -23,4 +26,7 @@ export default {
     }
 }
 </script>
-<style scoped></style>
+<style scoped>.like-main {
+    height: 100%;
+    display: flex;
+}</style>

@@ -1,17 +1,17 @@
 <template>
-    <div>
+    <div class="info-main">
         <side-bar/>
-        <div class="right-content">
-			<router-view/>
-		</div>
+        <info-main-page></info-main-page>
     </div>
 </template>
 <script>
+import InfoMainPage from '@/views/info/InfoMainPage'
 import SideBar from '../../components/SideBar'
 export default {
     name: 'RateHistoryRouter',
     components: {
-        SideBar
+        SideBar,
+        InfoMainPage
     },
     data() {
         return {
@@ -26,4 +26,9 @@ export default {
     }
 }
 </script>
-<style scoped></style>
+<style scoped>
+.info-main {
+    height: 100%;
+    display: flex;
+}
+</style>
