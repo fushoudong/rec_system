@@ -7,6 +7,7 @@ import HotRecommondRouter from './hot_rec'
 import RateHistoryRouter from './history'
 import GuessLikeRouter from './like'
 import SelfInfoRouter from './info'
+import ModelRouter from './model.js'
 Vue.use(Router)
 
 export default new Router({
@@ -51,6 +52,7 @@ export default new Router({
         hidden: true
       }
     },
+    ModelRouter,
     HotRecommondRouter,
     RateHistoryRouter,
     GuessLikeRouter,
