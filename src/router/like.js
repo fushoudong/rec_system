@@ -6,7 +6,7 @@ export default {
   name: 'GuessLikeRouter',
   component: GuessLikeRouter,
   meta: {
-    name: '猜你喜欢',
+    name: '用户推荐',
     icon: 'el-icon-star-on'
   },
   children: [{

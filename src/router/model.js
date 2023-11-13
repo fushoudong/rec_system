@@ -6,7 +6,7 @@ export default {
   name: 'ModelRouter',
   component: ModelRouter,
   meta: {
-    name: 'Echarts',
+    name: '模型',
     icon: 'el-icon-data-analysis'
   },
   children: [{

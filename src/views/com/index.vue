@@ -1,17 +1,17 @@
 <template>
-    <div class="history-main">
+    <div class="com-main">
         <side-bar/>
-        <history-main-page></history-main-page>
+        <com-main-page></com-main-page>
     </div>
 </template>
 <script>
 import SideBar from '../../components/SideBar'
-import HistoryMainPage from "./HistoryMainPage.vue"
+import ComMainPage from "./ComMainPage.vue"
 export default {
-    name: 'RateHistoryRouter',
+    name: 'comRouter',
     components: {
         SideBar,
-        HistoryMainPage
+        ComMainPage
     },
     data() {
         return {
@@ -27,7 +27,7 @@ export default {
 }
 </script>
 <style scoped>
-.history-main {
+.com-main {
     height: 100%;
     display: flex;
 }
